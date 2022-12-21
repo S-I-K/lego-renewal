@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+/*
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background: #252525;
+  /* header */
+}
+
+#wrap header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fdf102;
+  /* container */
+}
+
+#wrap header .container {
+  width: 1440px;
+  height: auto;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* a */
+  /* left */
+  /* header logo */
+  /* right */
+}
+
+#wrap header .container a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1c;
+}
+
+#wrap header .container .lego-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap header .container .lego-menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+#wrap header .container .header-logo a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+#wrap header .container .header-logo a img {
+  width: 100%;
+}
+
+#wrap header .container .user-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap header .container .user-menu li:not(:first-child) {
+  margin-left: 20px;
+}
+
+#wrap header .container .user-menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+#wrap header .container .user-menu li a img {
+  width: 100%;
+}
+
+#wrap main {
+  width: 100%;
+  height: 200vh;
+}
