@@ -188,7 +188,6 @@ a {
 }
 
 #wrap main .theme-category .container {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +219,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
 }
 
 #wrap main .theme-category .container .theme-icons li a {
