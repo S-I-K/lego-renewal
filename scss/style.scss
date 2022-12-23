@@ -18,11 +18,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.container {
+  width: 1440px;
+  height: auto;
+  padding: 0 20px;
+}
 
 #wrap {
   width: 100%;
-  height: 100vh;
-  background: #252525;
+  height: auto;
+  background: #fff;
   /* header */
   header {
     position: absolute;
@@ -36,10 +41,8 @@ a {
     z-index: 99;
     /* container */
     .container {
-      width: 1440px;
-      height: auto;
-      padding: 10px 20px;
       // border: 1px solid red;
+      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -92,6 +95,7 @@ a {
   main {
     width: 100%;
     height: 200vh;
+    /* main video */
     .main-video {
       position: relative;
       width: 100%;
@@ -126,6 +130,69 @@ a {
         }
       }
     }
-
+    /* theme category */
+    .theme-category {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 160px;
+      .container {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          font-family: 'Noto Sans KR', sans-serif;
+          color: #1a1a1c;
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 60px;
+        }
+        .theme-icons{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid red;
+          li {
+            a {
+              font-family: 'Noto Sans KR', sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              color: #1a1a1c;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 20px;
+                z-index: 1;
+              }
+              .icon-bg {
+                width: 0px;
+                height: 0px;
+                background: #ffff19;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all .4s;
+                position: absolute;
+                top: 0;
+              }
+            }
+            a:hover .icon-bg {
+              opacity: .8;
+              width: 140px;
+              height: 140px;
+            }
+          }
+          li:not(:last-child){
+            margin-right: 80px;
+          }
+        }
+      }
+    }
   }
 }
