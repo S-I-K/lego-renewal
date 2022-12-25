@@ -215,7 +215,67 @@ a {
         /* #new logo swiper */
         #new-logo-swiper {
           .swiper-wrapper {
+            /* slide */
             .swiper-slide {
+              border: 1px solid red;
+              width: auto;
+              height: auto;
+              /* img box */
+              .img-box {
+                width: 320px;
+                height: 320px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 20px;
+                img {
+                  width: 100%;
+                }
+                .label {
+                  position: absolute;
+                  bottom: 10px;
+                  left: 10px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #1a1a1c;
+                  background: #fdf102;
+                  padding: 0 10px;
+                }
+              }
+              /* desc box */
+              .desc-box {
+                display: flex;
+                width: 100%;
+                .desc-txt {
+                  border: 1px solid blue;
+                  .title {
+                    display: block;
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin: 0;
+                  }
+                  .star {
+                    margin: 10px 0;
+                  }
+                  .price {
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    font-family: 'Montserrat', sans-serif;
+                    span {
+                      margin-left: 4px;
+                      color: #545454;
+                      font-size: 14px;
+                      font-weight: 400;
+                      font-family: 'Noto Sans KR', sans-serif;
+                    }
+                  }
+                }
+                .desc-icon {
+                  border: 1px solid blue;
+                }
+              }
             }
           }
         }

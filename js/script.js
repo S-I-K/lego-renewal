@@ -8,6 +8,8 @@ $(() => {
       disableOnInteraction: false,
     },
   });
-  let newlego = new Swiper("#new-logo-swiper", {});
+  let newlego = new Swiper("#new-logo-swiper", {
+    slidesPerView: 'auto',
+  });
   console.log($(window).outerWidth());
 });
