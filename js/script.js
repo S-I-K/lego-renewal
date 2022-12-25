@@ -9,7 +9,22 @@ $(() => {
     },
   });
   let newlego = new Swiper("#new-logo-swiper", {
+    loop: true,
     slidesPerView: 'auto',
+    spaceBetween: 40,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".new-lego-pagination",
+      clickable: true,
+      // dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
   console.log($(window).outerWidth());
 });

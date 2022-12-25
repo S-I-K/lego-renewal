@@ -210,14 +210,14 @@ a {
       align-items: center;
       /* .container */
       .container {
-        border: 1px solid red;
+        // border: 1px solid red;
         padding-top: 160px;
         /* #new logo swiper */
         #new-logo-swiper {
           .swiper-wrapper {
             /* slide */
             .swiper-slide {
-              border: 1px solid red;
+              // border: 1px solid red;
               width: auto;
               height: auto;
               /* img box */
@@ -229,8 +229,10 @@ a {
                 justify-content: center;
                 position: relative;
                 margin-bottom: 20px;
+                overflow: hidden;
                 img {
                   width: 100%;
+                  // height: 100%;
                 }
                 .label {
                   position: absolute;
@@ -246,9 +248,15 @@ a {
               /* desc box */
               .desc-box {
                 display: flex;
+                justify-content: space-between;
                 width: 100%;
                 .desc-txt {
-                  border: 1px solid blue;
+                  // border: 1px solid blue;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
                   .title {
                     display: block;
                     font-size: 22px;
@@ -257,6 +265,7 @@ a {
                   }
                   .star {
                     margin: 10px 0;
+                    display: flex;
                   }
                   .price {
                     font-size: 18px;
@@ -273,9 +282,48 @@ a {
                   }
                 }
                 .desc-icon {
-                  border: 1px solid blue;
+                  // border: 1px solid blue;
+                  display: flex;
+                  .cart-icon,
+                  .wish-icon {
+                    width: 34px;
+                    height: 34px;
+                    background: #e6e8ec;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                      width: 22px;
+                    }
+                  }
+                  .wish-icon {
+                    margin-left: 20px;
+                  }
                 }
               }
+            }
+          }
+          .new-lego-pagination {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .swiper-pagination-bullet:not(:last-child){
+              margin-right: 10px;
+            }
+            .swiper-pagination-bullet{
+              background: #0089cf;
+              opacity: 0.2;
+              width: 12px;
+              height: 12px;
+              transition: all .4s;
+            }
+            .swiper-pagination-bullet-active {
+              background: #0089cf;
+              opacity: 1;
+              width: 14px;
+              height: 14px;
             }
           }
         }
