@@ -28,6 +28,10 @@ a {
   padding: 0 20px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 #wrap {
   width: 100%;
   height: auto;
@@ -100,6 +104,7 @@ a {
   /* main video */
   /* theme category */
   /* .new logos */
+  /* .sub banner */
 }
 #wrap main .title {
   font-family: "Noto Sans KR", sans-serif;
@@ -233,6 +238,7 @@ a {
   width: 100%;
 }
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -295,6 +301,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon img,
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon img {
@@ -324,4 +331,76 @@ a {
   opacity: 1;
   width: 14px;
   height: 14px;
+}
+#wrap main .sub-banner {
+  margin-top: 160px;
+}
+#wrap main .sub-banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+#wrap main .sub-banner a .sub-banner-bg {
+  width: 100%;
+  height: 100%;
+  background: url("../images/sub-banner.jpg") no-repeat top/cover;
+  opacity: 1;
+}
+#wrap main .sub-banner a .sub-banner-txt {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 30px;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 24px;
+}
+#wrap main .sub-banner a .sub-banner-txt .title {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+#wrap main .sub-banner a .sub-banner-txt p {
+  text-align: left;
+  font-size: 18px;
+  color: #414141;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+#wrap main .sub-banner a .sub-banner-txt .btn {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #1a1a1c;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.4s;
+}
+#wrap main .sub-banner a .sub-banner-txt .btn img {
+  position: absolute;
+  margin-top: 4px;
+  height: 22px;
+  right: -30px;
+  transition: all 0.4s;
+  opacity: 1;
+}
+#wrap main .sub-banner a .sub-banner-txt .btn:hover {
+  color: #ee1d23;
+}
+#wrap main .sub-banner a .sub-banner-txt .btn:hover img {
+  right: -60px;
+  opacity: 0;
 }

@@ -4,16 +4,16 @@ $(() => {
     slidesPerView: "6",
     spaceBetween: 80,
     autoplay: {
-      delay: 4000,
+      delay: 5000,
       disableOnInteraction: false,
     },
   });
   let newlego = new Swiper("#new-logo-swiper", {
     loop: true,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     spaceBetween: 40,
     autoplay: {
-      delay: 4000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {
