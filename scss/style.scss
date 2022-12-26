@@ -103,7 +103,7 @@ html {
       color: #1a1a1c;
       font-size: 36px;
       font-weight: bold;
-      letter-spacing: 0.025em;
+      letter-spacing: -0.025em;
       margin-bottom: 60px;
       text-align: center;
     }
@@ -157,7 +157,7 @@ html {
           color: #1a1a1c;
           font-size: 36px;
           font-weight: bold;
-          letter-spacing: 0.025em;
+          letter-spacing: -0.025em;
           margin-bottom: 60px;
           text-align: center;
         }
@@ -185,6 +185,7 @@ html {
                   font-family: "Noto Sans KR", sans-serif;
                   font-size: 16px;
                   font-weight: 500;
+                  letter-spacing: -0.025em;
                 }
                 .icon-bg {
                   top: 0;
@@ -267,6 +268,7 @@ html {
                     font-size: 22px;
                     font-weight: bold;
                     margin: 0;
+                    letter-spacing: -0.025em;
                   }
                   .star {
                     margin: 10px 0;
@@ -359,6 +361,7 @@ html {
         }
         .sub-banner-txt {
           background: rgba(255, 255, 255, 0.5);
+          border-radius: 14px;
           padding: 30px 30px;
           position: absolute;
           left: 80px;
@@ -367,7 +370,6 @@ html {
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          border-radius: 24px;
           .title {
             margin-bottom: 0;
             text-align: left;
@@ -409,6 +411,139 @@ html {
             img {
               right: -60px;
               opacity: 0;
+            }
+          }
+        }
+      }
+    }
+    /* .mario lego wrap */
+    .mario-lego-wrap {
+      margin-top: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        border: 1px solid red;
+        /* title */
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0;
+            color: #69696b;
+            position: absolute;
+            right: 0;
+            img {
+              margin-left: 20px;
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+        /* slide */
+        #mario-swiper {
+          .swiper-wrapper {
+            /* slide */
+            .swiper-slide {
+              // border: 1px solid red;
+              width: auto;
+              height: auto;
+              /* img box */
+              .img-box {
+                width: 320px;
+                height: 320px;
+                background: url("../images/mario-lego1.png") no-repeat center /
+                  cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 20px;
+                overflow: hidden;
+                .label {
+                  font-family: "Montserrat", sans-serif;
+                  position: absolute;
+                  bottom: 10px;
+                  left: 10px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #1a1a1c;
+                  background: #fdf102;
+                  padding: 0 10px;
+                }
+              }
+              /* desc box */
+              .desc-box {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .desc-txt {
+                  // border: 1px solid blue;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                  .title {
+                    display: block;
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin: 0;
+                    letter-spacing: -0.025em;
+                  }
+                  .star {
+                    margin: 10px 0;
+                    display: flex;
+                    li {
+                      height: 16px;
+                      img {
+                        height: 100%;
+                      }
+                    }
+                  }
+                  .price {
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    font-family: "Montserrat", sans-serif;
+                    span {
+                      margin-left: 4px;
+                      color: #545454;
+                      font-size: 14px;
+                      font-weight: 400;
+                      font-family: "Noto Sans KR", sans-serif;
+                    }
+                  }
+                }
+                .desc-icon {
+                  // border: 1px solid blue;
+                  display: flex;
+                  .cart-icon,
+                  .wish-icon {
+                    width: 32px;
+                    height: 32px;
+                    background: #e6e8ec;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    img {
+                      width: 20px;
+                    }
+                  }
+                  .wish-icon {
+                    margin-left: 20px;
+                  }
+                }
+              }
             }
           }
         }

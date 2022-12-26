@@ -1,4 +1,5 @@
 $(() => {
+  /* theme category */
   var theme = new Swiper("#theme-category-swiper", {
     loop: true,
     slidesPerView: "6",
@@ -8,6 +9,7 @@ $(() => {
       disableOnInteraction: false,
     },
   });
+  /* new legos */
   let newlego = new Swiper("#new-logo-swiper", {
     loop: true,
     slidesPerView: "auto",
@@ -26,5 +28,9 @@ $(() => {
       prevEl: ".swiper-button-prev",
     },
   });
-  console.log($(window).outerWidth());
+  /* super mario legos */
+  let mario = new Swiper("#mario-swiper", {
+    slidesPerView: "4",
+    spaceBetween: 40,
+  });
 });
