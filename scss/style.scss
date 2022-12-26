@@ -59,7 +59,10 @@ html {
       }
       /* left */
       .lego-menu {
+        width: 220px;
         display: flex;
+        justify-content: flex-start;
+        // border: 1px solid red;
         li:not(:last-child) {
           margin-right: 20px;
         }
@@ -78,7 +81,10 @@ html {
       }
       /* right */
       .user-menu {
+        width: 220px;
         display: flex;
+        justify-content: flex-end;
+        // border: 1px solid red;
         li:not(:first-child) {
           margin-left: 20px;
         }

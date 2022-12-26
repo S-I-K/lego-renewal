@@ -84,9 +84,13 @@ html {
 }
 
 #wrap header .container .lego-menu {
+  width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #wrap header .container .lego-menu li:not(:last-child) {
@@ -104,9 +108,13 @@ html {
 }
 
 #wrap header .container .user-menu {
+  width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #wrap header .container .user-menu li:not(:first-child) {
