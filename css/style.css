@@ -33,6 +33,68 @@ html {
   overflow-x: hidden;
 }
 
+/* animation */
+@-webkit-keyframes mario {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes mario {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
 #wrap {
   width: 100%;
   height: auto;
@@ -335,18 +397,44 @@ html {
 
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box img {
   width: 100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
+  width: 110%;
 }
 
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label {
-  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 10px;
   left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label li {
   font-size: 14px;
-  font-weight: 500;
-  color: #1a1a1c;
-  background: #fdf102;
   padding: 0 10px;
+}
+
+#wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
+  margin-right: 10px;
+}
+
+#wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fdf102;
+  color: #1a1a1c;
+  font-weight: 500;
+}
+
+#wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
+  font-family: "Montserrat", sans-serif;
+  background: #ee1d23;
+  font-weight: bold;
+  color: #fff;
 }
 
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box {
@@ -597,7 +685,6 @@ html {
 }
 
 #wrap main .mario-lego-wrap .container {
-  border: 1px solid red;
   /* title */
   /* slide */
 }
@@ -637,10 +724,77 @@ html {
   margin-left: 20px;
   width: 14px;
   height: 14px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#wrap main .mario-lego-wrap .container .title .more:hover img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper {
   /* slide */
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  width: 320px;
+  background: #1c4e0c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-img {
+  width: 280px;
+  height: auto;
+  opacity: .4;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt .title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt .desc {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1):hover .mario-thumb-img {
+  -webkit-animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+          animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
 }
 
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide {
@@ -653,7 +807,6 @@ html {
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box {
   width: 320px;
   height: 320px;
-  background: url("../images/mario-lego1.png") no-repeat center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,16 +821,46 @@ html {
   overflow: hidden;
 }
 
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box img {
+  height: 100%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
+  height: 110%;
+}
+
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label {
-  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 10px;
   left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li {
   font-size: 14px;
-  font-weight: 500;
-  color: #1a1a1c;
-  background: #fdf102;
   padding: 0 10px;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
+  margin-right: 10px;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fdf102;
+  color: #1a1a1c;
+  font-weight: 500;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
+  font-family: "Montserrat", sans-serif;
+  background: #ee1d23;
+  font-weight: bold;
+  color: #fff;
 }
 
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
@@ -730,19 +913,48 @@ html {
   height: 100%;
 }
 
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price span {
-  margin-left: 4px;
-  color: #545454;
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price .won {
   font-size: 14px;
   font-weight: 400;
-  font-family: "Noto Sans KR", sans-serif;
+  color: #545454;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ee1d23;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price .won {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ee1d23;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price .won {
+  font-size: 14px;
+  font-weight: 400;
+  color: #545454;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 #wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {

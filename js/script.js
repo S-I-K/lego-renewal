@@ -30,7 +30,7 @@ $(() => {
   });
   /* super mario legos */
   let mario = new Swiper("#mario-swiper", {
-    slidesPerView: "4",
+    slidesPerView: '4',
     spaceBetween: 40,
   });
 });
