@@ -32,13 +32,24 @@ $(() => {
   let mario = new Swiper("#mario-swiper", {
     slidesPerView: "auto",
     spaceBetween: 40,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
   /* marvel legos */
   let marvel = new Swiper("#marvel-swiper", {
     slidesPerView: "auto",
     spaceBetween: 40,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
   });
 });
