@@ -27,16 +27,31 @@ html {
   overflow-x: hidden;
 }
 
-/* animation */
+/* mario jump animation */
 @keyframes mario {
-  0%   { transform: scale(1,1)      translateY(0); }
-  10%  { transform: scale(1.1,.9)   translateY(0); }
-  30%  { transform: scale(.9,1.1)   translateY(-100px); }
-  50%  { transform: scale(1.05,.95) translateY(0); }
-  57%  { transform: scale(1,1)      translateY(-7px); }
-  64%  { transform: scale(1,1)      translateY(0); }
-  100% { transform: scale(1,1)      translateY(0); }
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
+/* marvel animation */
 
 #wrap {
   width: 100%;
@@ -124,8 +139,7 @@ html {
       margin-bottom: 60px;
       text-align: center;
     }
-    width: 100%;
-    height: 200vh;
+
     /* main video */
     .main-video {
       position: relative;
@@ -161,6 +175,7 @@ html {
         }
       }
     }
+
     /* theme category */
     .theme-category {
       display: flex;
@@ -225,6 +240,7 @@ html {
         }
       }
     }
+
     /* .new logos */
     .new-logos {
       display: flex;
@@ -255,7 +271,7 @@ html {
                 overflow: hidden;
                 img {
                   width: 100%;
-                  transition: all .4s;
+                  transition: all 0.4s;
                 }
                 img:hover {
                   width: 110%;
@@ -265,15 +281,15 @@ html {
                   bottom: 10px;
                   left: 10px;
                   display: flex;
-                  li{
+                  li {
                     font-size: 14px;
                     padding: 0 10px;
                   }
-                  li:not(:last-child){
+                  li:not(:last-child) {
                     margin-right: 10px;
                   }
                   .new {
-                    font-family: 'Noto Sans KR', sans-serif;
+                    font-family: "Noto Sans KR", sans-serif;
                     background: #fdf102;
                     color: #1a1a1c;
                     font-weight: 500;
@@ -381,6 +397,7 @@ html {
         }
       }
     }
+
     /* .sub banner */
     .sub-banner {
       margin-top: 160px;
@@ -454,6 +471,7 @@ html {
         }
       }
     }
+
     /* .mario lego wrap */
     .mario-lego-wrap {
       margin-top: 160px;
@@ -482,7 +500,7 @@ html {
               margin-left: 20px;
               width: 14px;
               height: 14px;
-              transition: all .4s;
+              transition: all 0.4s;
             }
           }
           .more:hover {
@@ -491,34 +509,44 @@ html {
             }
           }
         }
-        /* slide */
-        #mario-swiper {
-          .swiper-wrapper {
-            /* slide */
-            .swiper-slide:nth-child(1) {
-              // border: 1px solid red;
+        .product-wrap {
+          display: flex;
+          justify-content: center;
+          .thumb-wrap {
+            width: auto;
+            height: auto;
+            // border: 1px solid red;
+            margin-right: 40px;
+            .thumb:hover {
+              img {
+                animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite
+                  alternate;
+              }
+            }
+            .thumb {
               width: 320px;
-              background: #1c4e0c;
+              height: 100%;
               display: flex;
               align-items: center;
               justify-content: center;
               position: relative;
               overflow: hidden;
-              .mario-thumb-img {
+              background: #1c4e0c;
+              img {
                 width: 280px;
                 height: auto;
-                opacity: .4;
-                transition: all .4s;
+                opacity: 0.4;
+                transition: all 0.4s;
                 transform-origin: bottom;
               }
-              .mario-thumb-txt {
+              .marvel-thumb-txt {
                 position: absolute;
-                font-family: 'Noto Sans KR', sans-serif;
+                font-family: "Noto Sans KR", sans-serif;
                 letter-spacing: 0;
                 line-height: 24px;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 .title {
                   color: #fff;
                   font-size: 34px;
@@ -529,165 +557,427 @@ html {
                   color: #fff;
                   font-size: 18px;
                   font-weight: 500;
+                  letter-spacing: 0;
                 }
               }
             }
-            .swiper-slide:nth-child(1):hover {
-              .mario-thumb-img {
-                animation: mario 1.6s cubic-bezier(0.280, 0.840, 0.420, 1) infinite alternate;
-              }
-            }
-            .swiper-slide {
-              // border: 1px solid red;
-              width: auto;
-              height: auto;
-              /* img box */
-              .img-box {
+          }
+          /* slide */
+          #mario-swiper {
+            .swiper-wrapper {
+              /* slide */
+              .swiper-slide {
                 // border: 1px solid red;
                 width: 320px;
-                height: 320px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                margin-bottom: 20px;
-                overflow: hidden;
-                img {
-                  height: 100%;
-                  transition: all .4s;
-                }
-                img:hover {
-                  height: 110%;
-                }
-                .label {
-                  position: absolute;
-                  bottom: 10px;
-                  left: 10px;
+                height: auto;
+                /* img box */
+                .img-box {
+                  // border: 1px solid red;
+                  width: 320px;
+                  height: 320px;
                   display: flex;
-                  li{
-                    font-size: 14px;
-                    padding: 0 10px;
-                  }
-                  li:not(:last-child){
-                    margin-right: 10px;
-                  }
-                  .new {
-                    font-family: 'Noto Sans KR', sans-serif;
-                    background: #fdf102;
-                    color: #1a1a1c;
-                    font-weight: 500;
-                  }
-                  .sale {
-                    font-family: "Montserrat", sans-serif;
-                    background: #ee1d23;
-                    font-weight: bold;
-                    color: #fff;
-                  }
-                }
-              }
-              /* desc box */
-              .desc-box {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                .desc-txt {
-                  // border: 1px solid blue;
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
+                  align-items: center;
                   justify-content: center;
-                  .title {
-                    display: block;
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin: 0;
-                    letter-spacing: -0.025em;
+                  position: relative;
+                  margin-bottom: 20px;
+                  overflow: hidden;
+                  img {
+                    height: 100%;
+                    transition: all 0.4s;
                   }
-                  .star {
-                    margin: 10px 0 20px;
+                  img:hover {
+                    height: 110%;
+                  }
+                  .label {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
                     display: flex;
                     li {
-                      height: 14px;
+                      font-size: 14px;
+                      padding: 0 10px;
+                    }
+                    li:not(:last-child) {
+                      margin-right: 10px;
+                    }
+                    .new {
+                      font-family: "Noto Sans KR", sans-serif;
+                      background: #fdf102;
+                      color: #1a1a1c;
+                      font-weight: 500;
+                    }
+                    .sale {
+                      font-family: "Montserrat", sans-serif;
+                      background: #ee1d23;
+                      font-weight: bold;
+                      color: #fff;
+                    }
+                  }
+                }
+                /* desc box */
+                .desc-box {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 100%;
+                  .desc-txt {
+                    // border: 1px solid blue;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .title {
+                      display: block;
+                      font-size: 18px;
+                      font-weight: 600;
+                      margin: 0;
+                      letter-spacing: -0.025em;
+                    }
+                    .star {
+                      margin: 10px 0 20px;
+                      display: flex;
+                      li {
+                        height: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                          height: 100%;
+                        }
+                      }
+                    }
+                    .price {
+                      .normal-price {
+                        font-size: 26px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #545454;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                      .sale-price {
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: #ee1d23;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #ee1d23;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                      .ori-price {
+                        text-decoration: line-through;
+                        font-size: 26px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        color: #545454;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #545454;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                    }
+                  }
+                  .desc-icon {
+                    // border: 1px solid blue;
+                    display: flex;
+                    height: auto;
+                    .cart-icon,
+                    .wish-icon {
+                      width: 32px;
+                      height: 32px;
+                      background: #e6e8ec;
+                      border-radius: 50%;
                       display: flex;
                       align-items: center;
                       justify-content: center;
+                      cursor: pointer;
                       img {
-                        height: 100%;
+                        width: 20px;
                       }
                     }
-                  }
-                  .price {
-                    .normal-price {
-                      font-size: 26px;
-                      font-weight: bold;
-                      letter-spacing: 0;
-                      font-family: "Montserrat", sans-serif;
-                      .won {
-                        margin-left: 4px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #545454;
-                        font-family: 'Noto Sans KR', sans-serif;
-                      }
+                    .wish-icon {
+                      margin-left: 20px;
                     }
-                    .sale-price {
-                      font-size: 32px;
-                      font-weight: 700;
-                      color: #ee1d23;
-                      letter-spacing: 0;
-                      font-family: "Montserrat", sans-serif;
-                      .won {
-                        margin-left: 4px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #ee1d23;
-                        font-family: 'Noto Sans KR', sans-serif;
-                      }
-                    }
-                    .ori-price {
-                      text-decoration: line-through;
-                      font-size: 26px;
-                      font-weight: bold;
-                      letter-spacing: 0;
-                      font-family: "Montserrat", sans-serif;
-                      color: #545454;
-                      .won {
-                        margin-left: 4px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #545454;
-                        font-family: 'Noto Sans KR', sans-serif;
-                      }
-                    }
-                  }
-                }
-                .desc-icon {
-                  // border: 1px solid blue;
-                  display: flex;
-                  height: auto;
-                  .cart-icon,
-                  .wish-icon {
-                    width: 32px;
-                    height: 32px;
-                    background: #e6e8ec;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                    img {
-                      width: 20px;
-                    }
-                  }
-                  .wish-icon {
-                    margin-left: 20px;
                   }
                 }
               }
             }
           }
         }
+      }
+    }
+    /* .marbel lego wrap */
+    .marvel-lego-wrap {
+      margin-top: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        // border: 1px solid red;
+        /* title */
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0;
+            color: #69696b;
+            position: absolute;
+            right: 0;
+            img {
+              margin-left: 20px;
+              width: 14px;
+              height: 14px;
+              transition: all 0.4s;
+            }
+          }
+          .more:hover {
+            img {
+              transform: rotate(90deg);
+            }
+          }
+        }
+        .product-wrap {
+          display: flex;
+          justify-content: center;
+          /* thumb */
+          .thumb-wrap {
+            width: auto;
+            height: auto;
+            // border: 1px solid red;
+            margin-right: 40px;
+            .thumb:hover {
+              img {
+                animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite
+                  alternate;
+              }
+            }
+            .thumb {
+              width: 320px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              overflow: hidden;
+              background: #420b0d;
+              img {
+                width: 280px;
+                height: auto;
+                opacity: 0.4;
+                transition: all 0.4s;
+                transform-origin: bottom;
+              }
+              .marvel-thumb-txt {
+                position: absolute;
+                font-family: "Noto Sans KR", sans-serif;
+                letter-spacing: 0;
+                line-height: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title {
+                  color: #fff;
+                  font-size: 34px;
+                  font-weight: bold;
+                  margin-bottom: 40px;
+                }
+                .desc {
+                  color: #fff;
+                  font-size: 18px;
+                  font-weight: 500;
+                  letter-spacing: 0;
+                }
+              }
+            }
+          }
+          /* slide */
+          #marvel-swiper {
+            .swiper-wrapper {
+              /* slide */
+              .swiper-slide {
+                // border: 1px solid red;
+                width: 320px;
+                height: auto;
+                /* img box */
+                .img-box {
+                  // border: 1px solid red;
+                  width: 320px;
+                  height: 320px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                  margin-bottom: 20px;
+                  overflow: hidden;
+                  img {
+                    height: 100%;
+                    transition: all 0.4s;
+                  }
+                  img:hover {
+                    height: 110%;
+                  }
+                  .label {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    display: flex;
+                    li {
+                      font-size: 14px;
+                      padding: 0 10px;
+                    }
+                    li:not(:last-child) {
+                      margin-right: 10px;
+                    }
+                    .new {
+                      font-family: "Noto Sans KR", sans-serif;
+                      background: #fdf102;
+                      color: #1a1a1c;
+                      font-weight: 500;
+                    }
+                    .sale {
+                      font-family: "Montserrat", sans-serif;
+                      background: #ee1d23;
+                      font-weight: bold;
+                      color: #fff;
+                    }
+                  }
+                }
+                /* desc box */
+                .desc-box {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 100%;
+                  .desc-txt {
+                    // border: 1px solid blue;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .title {
+                      display: block;
+                      font-size: 18px;
+                      font-weight: 600;
+                      margin: 0;
+                      letter-spacing: -0.025em;
+                    }
+                    .star {
+                      margin: 10px 0 20px;
+                      display: flex;
+                      li {
+                        height: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                          height: 100%;
+                        }
+                      }
+                    }
+                    .price {
+                      .normal-price {
+                        font-size: 26px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #545454;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                      .sale-price {
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: #ee1d23;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #ee1d23;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                      .ori-price {
+                        text-decoration: line-through;
+                        font-size: 26px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        font-family: "Montserrat", sans-serif;
+                        color: #545454;
+                        .won {
+                          margin-left: 4px;
+                          font-size: 14px;
+                          font-weight: 400;
+                          color: #545454;
+                          font-family: "Noto Sans KR", sans-serif;
+                        }
+                      }
+                    }
+                  }
+                  .desc-icon {
+                    // border: 1px solid blue;
+                    display: flex;
+                    height: auto;
+                    .cart-icon,
+                    .wish-icon {
+                      width: 32px;
+                      height: 32px;
+                      background: #e6e8ec;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      img {
+                        width: 20px;
+                      }
+                    }
+                    .wish-icon {
+                      margin-left: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* lego story */
+    .lego-story {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 160px;
+      .container {
+        border: 1px solid red;
       }
     }
   }

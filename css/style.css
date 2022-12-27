@@ -8,8 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -33,185 +32,133 @@ html {
   overflow-x: hidden;
 }
 
-/* animation */
+/* mario jump animation */
 @-webkit-keyframes mario {
   0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   10% {
-    -webkit-transform: scale(1.1, 0.9) translateY(0);
-            transform: scale(1.1, 0.9) translateY(0);
+    transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
-            transform: scale(0.9, 1.1) translateY(-100px);
+    transform: scale(0.9, 1.1) translateY(-100px);
   }
   50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
+    transform: scale(1.05, 0.95) translateY(0);
   }
   57% {
-    -webkit-transform: scale(1, 1) translateY(-7px);
-            transform: scale(1, 1) translateY(-7px);
+    transform: scale(1, 1) translateY(-7px);
   }
   64% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
 }
 @keyframes mario {
   0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   10% {
-    -webkit-transform: scale(1.1, 0.9) translateY(0);
-            transform: scale(1.1, 0.9) translateY(0);
+    transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
-            transform: scale(0.9, 1.1) translateY(-100px);
+    transform: scale(0.9, 1.1) translateY(-100px);
   }
   50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
+    transform: scale(1.05, 0.95) translateY(0);
   }
   57% {
-    -webkit-transform: scale(1, 1) translateY(-7px);
-            transform: scale(1, 1) translateY(-7px);
+    transform: scale(1, 1) translateY(-7px);
   }
   64% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
 }
-
+/* marvel animation */
 #wrap {
   width: 100%;
   height: auto;
   background: #fff;
   /* header */
 }
-
 #wrap header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: #fdf102;
   z-index: 99;
-  -webkit-box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
   /* container */
 }
-
 #wrap header .container {
   padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   /* a */
   /* left */
   /* header logo */
   /* right */
 }
-
 #wrap header .container a {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #1a1a1c;
 }
-
 #wrap header .container .lego-menu {
   width: 220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 #wrap header .container .lego-menu li:not(:last-child) {
   margin-right: 20px;
 }
-
 #wrap header .container .header-logo a {
   display: block;
   width: 60px;
   height: 60px;
 }
-
 #wrap header .container .header-logo a img {
   width: 100%;
 }
-
 #wrap header .container .user-menu {
   width: 220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 #wrap header .container .user-menu li:not(:first-child) {
   margin-left: 20px;
 }
-
 #wrap header .container .user-menu li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
 }
-
 #wrap header .container .user-menu li a img {
   width: 100%;
 }
-
 #wrap main {
   /* 공용 title */
-  width: 100%;
-  height: 200vh;
   /* main video */
   /* theme category */
   /* .new logos */
   /* .sub banner */
   /* .mario lego wrap */
+  /* .marbel lego wrap */
+  /* lego story */
 }
-
 #wrap main .title {
   font-family: "Noto Sans KR", sans-serif;
   color: #1a1a1c;
@@ -221,28 +168,19 @@ html {
   margin-bottom: 60px;
   text-align: center;
 }
-
 #wrap main .main-video {
   position: relative;
   width: 100%;
   height: 700px;
   z-index: 1;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .main-video video {
   width: 100%;
 }
-
 #wrap main .main-video .play-btn {
   position: absolute;
   width: 60px;
@@ -250,13 +188,11 @@ html {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
 }
-
 #wrap main .main-video .play-btn span {
   position: absolute;
   top: 50%;
   left: 35%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   width: 24px;
   height: 24px;
@@ -266,23 +202,14 @@ html {
   border-bottom: 14px solid transparent;
   cursor: pointer;
 }
-
 #wrap main .theme-category {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #wrap main .theme-category .container {
   padding-top: 160px;
 }
-
 #wrap main .theme-category .container .title {
   font-family: "Noto Sans KR", sans-serif;
   color: #1a1a1c;
@@ -292,45 +219,31 @@ html {
   margin-bottom: 60px;
   text-align: center;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide {
   width: auto;
   height: auto;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide a {
   width: auto;
   height: auto;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide a img {
   width: 140px;
   height: 140px;
   z-index: 1;
   margin-bottom: 20px;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide a span {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.025em;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide a .icon-bg {
   top: 0;
   position: absolute;
@@ -340,130 +253,85 @@ html {
   border-radius: 50%;
   opacity: 0;
 }
-
 #wrap main .theme-category .container #theme-category-swiper .swiper-wrapper .swiper-slide a:hover .icon-bg {
   width: 140px;
   height: 140px;
   opacity: 0.8;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 #wrap main .new-logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   /* .container */
 }
-
 #wrap main .new-logos .container {
   padding-top: 160px;
   /* #new logo swiper */
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper {
   /* slide */
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide {
   width: auto;
   height: auto;
   /* img box */
   /* desc box */
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box {
   width: 320px;
   height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box img {
   width: 100%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
   width: 110%;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label li {
   font-size: 14px;
   padding: 0 10px;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
   margin-right: 10px;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background: #fdf102;
   color: #1a1a1c;
   font-weight: 500;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
   font-family: "Montserrat", sans-serif;
   background: #ee1d23;
   font-weight: bold;
   color: #fff;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
   display: block;
   font-size: 18px;
@@ -471,38 +339,25 @@ html {
   margin: 0;
   letter-spacing: -0.025em;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star {
   margin: 10px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li {
   height: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li img {
   height: 100%;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0;
   font-family: "Montserrat", sans-serif;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price span {
   margin-left: 4px;
   color: #545454;
@@ -510,99 +365,66 @@ html {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon,
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
   width: 32px;
   height: 32px;
   background: #e6e8ec;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon img,
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon img {
   width: 20px;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
   margin-left: 20px;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .new-lego-pagination {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .new-lego-pagination .swiper-pagination-bullet:not(:last-child) {
   margin-right: 10px;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .new-lego-pagination .swiper-pagination-bullet {
   background: #0089cf;
   opacity: 0.2;
   width: 12px;
   height: 12px;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 #wrap main .new-logos .container #new-logo-swiper .new-lego-pagination .swiper-pagination-bullet-active {
   background: #0089cf;
   opacity: 1;
   width: 14px;
   height: 14px;
 }
-
 #wrap main .sub-banner {
   margin-top: 160px;
 }
-
 #wrap main .sub-banner a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 600px;
   position: relative;
 }
-
 #wrap main .sub-banner a .sub-banner-bg {
   width: 100%;
   height: 100%;
   background: url("../images/sub-banner.jpg") no-repeat top/cover;
   opacity: 1;
 }
-
 #wrap main .sub-banner a .sub-banner-txt {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 14px;
@@ -610,21 +432,11 @@ html {
   position: absolute;
   left: 10%;
   top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-
 #wrap main .sub-banner a .sub-banner-txt .title {
   margin-bottom: 0;
   text-align: left;
@@ -632,7 +444,6 @@ html {
   font-weight: 700;
   letter-spacing: -0.025em;
 }
-
 #wrap main .sub-banner a .sub-banner-txt p {
   text-align: left;
   font-size: 18px;
@@ -643,84 +454,51 @@ html {
   line-height: 1.6;
   margin: 20px 0;
 }
-
 #wrap main .sub-banner a .sub-banner-txt .btn {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.025em;
   color: #1a1a1c;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 #wrap main .sub-banner a .sub-banner-txt .btn img {
   position: absolute;
   margin-top: 4px;
   height: 22px;
   right: -30px;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   opacity: 1;
 }
-
 #wrap main .sub-banner a .sub-banner-txt .btn:hover {
   color: #ee1d23;
 }
-
 #wrap main .sub-banner a .sub-banner-txt .btn:hover img {
   right: -60px;
   opacity: 0;
 }
-
 #wrap main .mario-lego-wrap {
   margin-top: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .mario-lego-wrap .container {
   /* title */
-  /* slide */
 }
-
 #wrap main .mario-lego-wrap .container .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
-
 #wrap main .mario-lego-wrap .container .title .more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;
@@ -728,242 +506,178 @@ html {
   position: absolute;
   right: 0;
 }
-
 #wrap main .mario-lego-wrap .container .title .more img {
   margin-left: 20px;
   width: 14px;
   height: 14px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
 #wrap main .mario-lego-wrap .container .title .more:hover img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper {
+#wrap main .mario-lego-wrap .container .product-wrap {
+  display: flex;
+  justify-content: center;
   /* slide */
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) {
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap {
+  width: auto;
+  height: auto;
+  margin-right: 40px;
+}
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb:hover img {
+  -webkit-animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+          animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+}
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb {
   width: 320px;
-  background: #1c4e0c;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100%;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
+  background: #1c4e0c;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-img {
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb img {
   width: 280px;
   height: auto;
-  opacity: .4;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  opacity: 0.4;
+  transition: all 0.4s;
+  transform-origin: bottom;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt {
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt {
   position: absolute;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   letter-spacing: 0;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt .title {
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt .title {
   color: #fff;
   font-size: 34px;
   font-weight: bold;
   margin-bottom: 40px;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1) .mario-thumb-txt .desc {
+#wrap main .mario-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt .desc {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: 0;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide:nth-child(1):hover .mario-thumb-img {
-  -webkit-animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
-          animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper {
+  /* slide */
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide {
-  width: auto;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide {
+  width: 320px;
   height: auto;
   /* img box */
   /* desc box */
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box {
   width: 320px;
   height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box img {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box img {
   height: 100%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
   height: 110%;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box .label {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li {
   font-size: 14px;
   padding: 0 10px;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
   margin-right: 10px;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
-  font-family: 'Noto Sans KR', sans-serif;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
+  font-family: "Noto Sans KR", sans-serif;
   background: #fdf102;
   color: #1a1a1c;
   font-weight: 500;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
   font-family: "Montserrat", sans-serif;
   background: #ee1d23;
   font-weight: bold;
   color: #fff;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
   display: block;
   font-size: 18px;
   font-weight: 600;
   margin: 0;
   letter-spacing: -0.025em;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star {
   margin: 10px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li {
   height: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li img {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li img {
   height: 100%;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0;
   font-family: "Montserrat", sans-serif;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price .won {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price .won {
   margin-left: 4px;
   font-size: 14px;
   font-weight: 400;
   color: #545454;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
-  font-size: 32px;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+  font-size: 28px;
   font-weight: 700;
   color: #ee1d23;
   letter-spacing: 0;
   font-family: "Montserrat", sans-serif;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price .won {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price .won {
   margin-left: 4px;
   font-size: 14px;
   font-weight: 400;
   color: #ee1d23;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
   text-decoration: line-through;
   font-size: 26px;
   font-weight: bold;
@@ -971,45 +685,276 @@ html {
   font-family: "Montserrat", sans-serif;
   color: #545454;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price .won {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price .won {
   margin-left: 4px;
   font-size: 14px;
   font-weight: 400;
   color: #545454;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
   display: flex;
   height: auto;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon,
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon,
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
   width: 32px;
   height: 32px;
   background: #e6e8ec;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon img,
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon img {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon img,
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon img {
   width: 20px;
 }
-
-#wrap main .mario-lego-wrap .container #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
+#wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
   margin-left: 20px;
+}
+#wrap main .marvel-lego-wrap {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap main .marvel-lego-wrap .container {
+  /* title */
+}
+#wrap main .marvel-lego-wrap .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap main .marvel-lego-wrap .container .title .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #69696b;
+  position: absolute;
+  right: 0;
+}
+#wrap main .marvel-lego-wrap .container .title .more img {
+  margin-left: 20px;
+  width: 14px;
+  height: 14px;
+  transition: all 0.4s;
+}
+#wrap main .marvel-lego-wrap .container .title .more:hover img {
+  transform: rotate(90deg);
+}
+#wrap main .marvel-lego-wrap .container .product-wrap {
+  display: flex;
+  justify-content: center;
+  /* thumb */
+  /* slide */
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap {
+  width: auto;
+  height: auto;
+  margin-right: 40px;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb:hover img {
+  -webkit-animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+          animation: mario 1.6s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #420b0d;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb img {
+  width: 280px;
+  height: auto;
+  opacity: 0.4;
+  transition: all 0.4s;
+  transform-origin: bottom;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt {
+  position: absolute;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt .title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap .thumb .marvel-thumb-txt .desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper {
+  /* slide */
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide {
+  width: 320px;
+  height: auto;
+  /* img box */
+  /* desc box */
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box img {
+  height: 100%;
+  transition: all 0.4s;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box img:hover {
+  height: 110%;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box .label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box .label li {
+  font-size: 14px;
+  padding: 0 10px;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box .label li:not(:last-child) {
+  margin-right: 10px;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box .label .new {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #fdf102;
+  color: #1a1a1c;
+  font-weight: 500;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box .label .sale {
+  font-family: "Montserrat", sans-serif;
+  background: #ee1d23;
+  font-weight: bold;
+  color: #fff;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star {
+  margin: 10px 0 20px;
+  display: flex;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .star li img {
+  height: 100%;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price .won {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #545454;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ee1d23;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price .won {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ee1d23;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+  text-decoration: line-through;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #545454;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price .won {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #545454;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+  display: flex;
+  height: auto;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon,
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
+  width: 32px;
+  height: 32px;
+  background: #e6e8ec;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .cart-icon img,
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon img {
+  width: 20px;
+}
+#wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon .wish-icon {
+  margin-left: 20px;
+}
+#wrap main .lego-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 160px;
+}
+#wrap main .lego-story .container {
+  border: 1px solid red;
 }
