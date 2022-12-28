@@ -18,11 +18,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.container {
-  width: 1440px;
-  height: auto;
-  padding: 0 20px;
-}
 html {
   overflow-x: hidden;
 }
@@ -57,6 +52,11 @@ html {
   width: 100%;
   height: auto;
   background: #fff;
+  .container {
+    width: 1440px;
+    height: auto;
+    padding: 0 20px;
+  }
   /* header */
   header {
     position: absolute;
@@ -128,6 +128,7 @@ html {
       }
     }
   }
+  /* main */
   main {
     /* 공용 title */
     .title {
@@ -1150,6 +1151,167 @@ html {
             img {
               right: 10px;
             }
+          }
+        }
+      }
+    }
+  }
+  /* footer */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #201d48;
+    .container {
+      padding: 40px 60px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: space-around;
+      /* left */
+      .footer-left {
+        width: 300px;
+        display: flex;
+        // border: 1px solid red;
+        .site-map {
+          li {
+            text-align: center;
+            a {
+              font-family: "Noto Sans KR", sans-serif;
+              font-size: 14px;
+              font-weight: 300;
+              color: #e5e5e5;
+            }
+          }
+          li:not(:last-child) {
+            margin-bottom: 20px;
+          }
+          li:first-child {
+            margin-bottom: 30px;
+            a {
+              color: #fff;
+              font-weight: bold;
+              font-size: 18px;
+            }
+          }
+        }
+        .site-map:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+      /* center */
+      .footer-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+        .footer-logo {
+          width: 120px;
+          height: 120px;
+        }
+        .location {
+          margin: 10px 0 20px;
+          font-family: "Noto Sans KR", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #fff;
+          background: #1a1a1c;
+          width: 100px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          img {
+            width: 12px;
+          }
+        }
+        .info {
+          display: flex;
+          margin-bottom: 40px;
+          li {
+            a {
+              color: #e6e6e6;
+              font-size: 14px;
+              font-family: "Noto Sans KR", sans-serif;
+            }
+          }
+          li:not(:last-child) {
+            margin-right: 20px;
+          }
+          li:first-child {
+            a {
+              color: #fff;
+              font-weight: bold;
+            }
+          }
+        }
+        .copyright {
+          text-align: center;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: "Noto Sans KR", sans-serif;
+          line-height: 18px;
+          color: #e6e6e6;
+        }
+      }
+      /* right */
+      .footer-right {
+        width: 300px;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .site-wrap {
+          display: flex;
+          .site-map {
+            li {
+              text-align: center;
+              a {
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                color: #e5e5e5;
+              }
+            }
+            li:not(:last-child) {
+              margin-bottom: 20px;
+            }
+            li:first-child {
+              margin-bottom: 30px;
+              a {
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+              }
+            }
+          }
+          .site-map:not(:first-child) {
+            margin-left: 40px;
+          }
+        }
+        .sns-wrap {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          // border: 1px solid red;
+          li {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            // background: #fff;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          li:not(:last-child) {
+            margin-right: 20px;
           }
         }
       }
