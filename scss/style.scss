@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 /*
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 */
 * {
   margin: 0;
@@ -716,6 +716,28 @@ html {
                 }
               }
             }
+            .swiper-pagination {
+              margin-top: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .swiper-pagination-bullet:not(:last-child) {
+                margin-right: 10px;
+              }
+              .swiper-pagination-bullet {
+                background: #0089cf;
+                opacity: 0.2;
+                width: 12px;
+                height: 12px;
+                transition: all 0.4s;
+              }
+              .swiper-pagination-bullet-active {
+                background: #0089cf;
+                opacity: 1;
+                width: 14px;
+                height: 14px;
+              }
+            }
           }
         }
       }
@@ -976,8 +998,87 @@ html {
       align-items: center;
       justify-content: center;
       padding-top: 160px;
+      // border: 1px solid red;
       .container {
-        border: 1px solid red;
+        // border: 1px solid red;
+        .title {
+        }
+        .story-box:not(:last-child) {
+          margin-bottom: 60px;
+        }
+        .story-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .story-thumb {
+            width: calc(100% / 2 - 40px);
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            img {
+              width: 100%;
+              // height: 100%;
+            }
+          }
+          .story-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: calc(100% / 2 - 40px);
+            .numb {
+              font-size: 30px;
+              font-weight: bold;
+              color: #1a1a1c;
+              letter-spacing: 0;
+              font-family: "Montserrat", sans-serif;
+              font-style: italic;
+            }
+            .title {
+              font-family: "Noto Sans KR", sans-serif;
+              margin-bottom: 0px;
+              font-size: 26px;
+              font-style: italic;
+            }
+            .desc {
+              font-family: "Noto Sans KR", sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              color: #69696b;
+              letter-spacing: -0.025em;
+              line-height: 24px;
+              margin: 40px 0;
+            }
+            .more-btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: "Noto Sans KR", sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              color: #fff;
+              background: #1a1a1c;
+              padding: 12px 52px;
+              border-radius: 6px;
+              position: relative;
+              transition: all 0.4s;
+              img {
+                height: 14px;
+                position: absolute;
+                right: 36px;
+                transition: all 0.4s;
+              }
+            }
+            .more-btn:hover {
+              background: #0089cf;
+              img {
+                right: 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
