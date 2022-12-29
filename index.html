@@ -17,6 +17,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="./js/jquery.scrollToGiveClass.js" defer></script>
     <!-- js -->
     <script src="./js/script.js" defer></script>
 
@@ -41,10 +42,11 @@
           </div>
           <!-- header right -->
           <ul class="user-menu">
-            <li>
-              <a href="#"
-                ><img src="./images/icon-search.png" alt="search icon"
-              /></a>
+            <li class="search-icon">
+              <input type="text" placeholder="찾으시는 레고가 있나요?" />
+              <a href="#">
+                <img src="./images/icon-search.png" alt="search icon" />
+              </a>
             </li>
             <li>
               <a href="#"
@@ -734,7 +736,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="pagination"></div>
+                <div class="marvel-pagination"></div>
               </div>
             </div>
           </div>
