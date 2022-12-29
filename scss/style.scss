@@ -1241,6 +1241,9 @@ html {
         overflow: hidden;
         .newsletter-lego {
           // border: 1px solid red;
+          transform: translateX(-100px);
+          opacity: 0;
+          transition: all 0.6s;
           img {
             width: 360px;
             height: 360px;
@@ -1248,6 +1251,10 @@ html {
           margin-right: 140px;
           position: relative;
           bottom: -40px;
+        }
+        .newsletter-lego.scrolled {
+          transform: translateX(0px);
+          opacity: 1;
         }
         .newsletter-txt {
           // border: 1px solid red;
@@ -1260,6 +1267,13 @@ html {
             font-family: "Noto Sans KR", sans-serif;
             margin: 0;
             color: #1a1a1c;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.6s;
+          }
+          .title.scrolled {
+            transform: translateX(0px);
+            opacity: 1;
           }
           .desc {
             font-size: 16px;
@@ -1267,6 +1281,13 @@ html {
             font-weight: 400;
             color: #1a1a1c;
             margin: 20px 0 30px;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.6s;
+          }
+          .desc.scrolled {
+            transform: translateX(0px);
+            opacity: 1;
           }
           .more-btn {
             display: flex;
@@ -1280,7 +1301,9 @@ html {
             padding: 12px 36px;
             border-radius: 6px;
             position: relative;
-            transition: all 0.4s;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.6s;
             img {
               height: 14px;
               position: absolute;
@@ -1293,6 +1316,10 @@ html {
             img {
               right: 10px;
             }
+          }
+          .more-btn.scrolled {
+            transform: translateX(0px);
+            opacity: 1;
           }
         }
       }

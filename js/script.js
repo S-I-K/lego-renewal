@@ -131,4 +131,24 @@ $(() => {
     baseline: "middle",
     add: 300,
   });
+  $(".newsletter-lego").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 300,
+  });
+  $(".newsletter-txt h3.title").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 300,
+  });
+  $(".newsletter-txt .desc").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 300,
+  });
+  $(".newsletter-txt .more-btn").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 300,
+  });
 });
