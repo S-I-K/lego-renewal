@@ -151,4 +151,10 @@ $(() => {
     baseline: "middle",
     add: 300,
   });
+
+  /* nav menu */
+  $(".hamburger").click(function () {
+    $(".m-nav").toggle("200");
+    $(this).toggleClass("close");
+  });
 });
