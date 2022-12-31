@@ -235,6 +235,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       .container {
         padding-top: 160px;
         // border: 1px solid red;
@@ -314,6 +315,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       /* .container */
       .container {
         // border: 1px solid red;
@@ -483,6 +485,7 @@ html {
     /* .sub banner */
     .sub-banner {
       margin-top: 160px;
+      width: 100%;
       a {
         display: flex;
         justify-content: center;
@@ -560,6 +563,7 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
       .container {
         // border: 1px solid red;
         /* title */
@@ -839,6 +843,7 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
       .container {
         // border: 1px solid red;
         /* title */
@@ -1115,6 +1120,7 @@ html {
 
     /* lego story */
     .lego-story {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1228,6 +1234,7 @@ html {
 
     /* lego newsletter */
     .newsletter {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1327,6 +1334,7 @@ html {
   }
   /* footer */
   footer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

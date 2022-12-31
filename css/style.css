@@ -358,6 +358,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 #wrap main .theme-category .container {
@@ -465,6 +466,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   /* .container */
 }
 
@@ -711,6 +713,7 @@ html {
 
 #wrap main .sub-banner {
   margin-top: 160px;
+  width: 100%;
 }
 
 #wrap main .sub-banner a {
@@ -823,6 +826,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 #wrap main .mario-lego-wrap .container {
@@ -1224,6 +1228,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 #wrap main .marvel-lego-wrap .container {
@@ -1614,6 +1619,7 @@ html {
 }
 
 #wrap main .lego-story {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1781,6 +1787,7 @@ html {
 }
 
 #wrap main .newsletter {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1928,6 +1935,7 @@ html {
 }
 
 #wrap footer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
