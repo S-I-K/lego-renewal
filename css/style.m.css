@@ -16,8 +16,8 @@
     display: none;
   }
   .hamburger {
-    height: 30px;
-    width: 40px;
+    height: 20px;
+    width: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -29,12 +29,13 @@
         justify-content: space-around;
     position: relative;
     z-index: 9999;
+    margin-right: 8px;
     cursor: pointer;
   }
   .hamburger span {
     display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: #1a1a1c;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
@@ -45,7 +46,7 @@
   .hamburger.close span {
     background: #fff;
     position: absolute;
-    height: 4px;
+    height: 2px;
   }
   .hamburger.close span:nth-child(1) {
     -webkit-transform: rotate(40deg);
@@ -190,6 +191,7 @@
     font-family: "Noto Sans KR", sans-serif;
   }
   .m-nav .menu-wrap .menu .menu-title {
+    cursor: pointer;
     font-size: 1.4rem;
     font-weight: bold;
     color: #fff;

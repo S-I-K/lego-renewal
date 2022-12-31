@@ -19,19 +19,20 @@
     display: none;
   }
   .hamburger {
-    height: 30px;
-    width: 40px;
+    height: 20px;
+    width: 30px;
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     z-index: 9999;
+    margin-right: 8px;
     cursor: pointer;
     span {
       display: block;
       width: 100%;
-      height: 3px;
+      height: 2px;
       background: #1a1a1c;
       transition: all 0.4s;
     }
@@ -41,7 +42,7 @@
     span {
       background: #fff;
       position: absolute;
-      height: 4px;
+      height: 2px;
     }
     span:nth-child(1) {
       transform: rotate(40deg);
@@ -154,6 +155,7 @@
         border-bottom: 2px solid rgb(188, 188, 214);
         font-family: "Noto Sans KR", sans-serif;
         .menu-title {
+          cursor: pointer;
           font-size: 1.4rem;
           font-weight: bold;
           color: #fff;

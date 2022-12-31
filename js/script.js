@@ -3,12 +3,21 @@ $(() => {
   /* theme category */
   var theme = new Swiper("#theme-category-swiper", {
     loop: true,
-    slidesPerView: "6",
-    spaceBetween: 80,
+    slidesPerView: "auto",
+    spaceBetween: 60,
     centeredSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
+    },
+    /* window >= number */
+    breakpoints: {
+      768: {
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        spaceBetween: 80,
+      },
     },
   });
   /* new legos */
@@ -16,7 +25,6 @@ $(() => {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 40,
-    // centeredSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -154,9 +162,15 @@ $(() => {
     add: 300,
   });
 
-  /* nav menu */
+  /* m-nav menu */
   $(".hamburger").click(function () {
     $(".m-nav").toggle("200");
     $(this).toggleClass("close");
+  });
+  /* m-nav acodian menu click event */
+  $(".menu-title").click(function () {
+    $('.sub-menu').stop().slideUp(400);
+    $(this).siblings(".sub-menu").stop().slideToggle(400);
+    // $(this).parents("li").toggleClass("arrow_action");
   });
 });
