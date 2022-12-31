@@ -12,6 +12,9 @@
 }
 /* html <= 768px */
 @media (max-width: 768px) {
+  #wrap .container {
+    width: 100%;
+  }
   #wrap header .container {
     padding: 10px 20px;
   }
@@ -177,11 +180,117 @@
       }
     }
   }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box {
+    width: 280px;
+    height: 280px;
+  }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+    font-size: 1rem;
+  }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
+    font-size: 1.4rem;
+  }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box {
+    flex-direction: column;
+  }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+    align-items: center;
+  }
+  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  #wrap main .sub-banner a .sub-banner-txt {
+    top: 10%;
+    left: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .thumb-wrap {
+    display: none;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+    margin-top: 10px;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box {
+    width: 280px;
+    height: 280px;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+    font-size: 1rem;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
+    font-size: 1.4rem;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+    font-size: 1.4rem;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+    font-size: 1.8rem;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+    align-items: center;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-pagination-progressbar {
+    right: 0;
+    margin: 0 auto;
+    width: 40%;
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap {
+    display: none;
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box {
+    width: 280px;
+    height: 280px;
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box {
+    flex-direction: column;
+    align-items: center;
+    .desc-icon {
+      margin-top: 10px;
+    }
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+    align-items: center;
+    .title {
+      font-size: 1rem;
+    }
+    .price {
+      font-size: 1.4rem;
+    }
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap .swiper-pagination-progressbar {
+    right: 0;
+    margin: 0 auto;
+    width: 40%;
+  }
+  #wrap main .lego-story .container .story-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wrap main .lego-story .container .story-box .story-thumb {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #wrap main .lego-story .container .story-box .story-txt {
+    align-items: center;
+    width: 100%;
+  }
 }
 /* html <= 375px */
 @media (max-width: 420px) {
   .m-nav {
     padding: 10px 20px;
+  }
+  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-pagination-progressbar {
+    width: 20%;
+  }
+  #wrap main .marvel-lego-wrap .container .product-wrap .swiper-pagination-progressbar {
+    width: 20%;
   }
 }
 /* html >= 769px */

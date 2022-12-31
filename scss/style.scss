@@ -402,7 +402,7 @@ html {
                     letter-spacing: -0.025em;
                   }
                   .star {
-                    margin: 10px 0 20px;
+                    margin: 10px 0px;
                     display: flex;
                     li {
                       height: 14px;
@@ -669,7 +669,7 @@ html {
               /* slide */
               .swiper-slide {
                 // border: 1px solid red;
-                width: 320px;
+                width: auto;
                 height: auto;
                 /* img box */
                 .img-box {
@@ -735,7 +735,7 @@ html {
                       letter-spacing: -0.025em;
                     }
                     .star {
-                      margin: 10px 0 20px;
+                      margin: 10px 0;
                       display: flex;
                       li {
                         height: 14px;
@@ -949,7 +949,7 @@ html {
               /* slide */
               .swiper-slide {
                 // border: 1px solid red;
-                width: 320px;
+                width: auto;
                 height: auto;
                 /* img box */
                 .img-box {
@@ -1015,7 +1015,7 @@ html {
                       letter-spacing: -0.025em;
                     }
                     .star {
-                      margin: 10px 0 20px;
+                      margin: 10px 0px;
                       display: flex;
                       li {
                         height: 14px;

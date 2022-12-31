@@ -22,9 +22,10 @@ $(() => {
   });
   /* new legos */
   let newlego = new Swiper("#new-logo-swiper", {
+    centeredSlides: true,
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 60,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -37,9 +38,19 @@ $(() => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    /* window >= number */
+    breakpoints: {
+      768: {
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        spaceBetween: 80,
+      },
+    },
   });
   /* super mario legos */
   let mario = new Swiper("#mario-swiper", {
+    centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 40,
     loop: true,
@@ -52,9 +63,19 @@ $(() => {
       type: "progressbar",
       clickable: true,
     },
+    /* window >= number */
+    breakpoints: {
+      768: {
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        spaceBetween: 80,
+      },
+    },
   });
   /* marvel legos */
   let marvel = new Swiper("#marvel-swiper", {
+    centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 40,
     loop: true,
@@ -66,6 +87,14 @@ $(() => {
       el: ".marvel-pagination",
       type: "progressbar",
       clickable: true,
+    },
+    breakpoints: {
+      768: {
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        spaceBetween: 80,
+      },
     },
   });
 
