@@ -6,10 +6,11 @@
     width: auto;
   }
 }
+
 /* html <= 768px */
 @media (max-width: 768px) {
   #wrap header .container {
-    padding: 10px 60px;
+    padding: 10px 20px;
   }
   #wrap header .container .lego-menu {
     display: none;
@@ -17,9 +18,15 @@
   .hamburger {
     height: 30px;
     width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
     z-index: 9999;
     cursor: pointer;
@@ -29,6 +36,7 @@
     width: 100%;
     height: 3px;
     background: #1a1a1c;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
   .hamburger.close {
@@ -40,10 +48,12 @@
     height: 4px;
   }
   .hamburger.close span:nth-child(1) {
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   .hamburger.close span:nth-child(2) {
-    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
   }
   #wrap header .container .user-menu {
     width: 38px;
@@ -63,25 +73,41 @@
     padding: 10px 60px;
   }
   .m-nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .m-nav .nav-header img {
     width: 60px;
     height: 60px;
   }
   .m-nav .nav-user-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 40px;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgb(188, 188, 214);
+    border-bottom: 2px solid #bcbcd6;
   }
   .m-nav .nav-user-menu .menu-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .m-nav .nav-user-menu .menu-left .user-lego {
     margin-right: 10px;
@@ -89,8 +115,12 @@
   }
   .m-nav .nav-user-menu .menu-left a.user-desc .name {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
@@ -106,13 +136,21 @@
     font-family: "Montserrat", sans-serif;
   }
   .m-nav .nav-user-menu .menu-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .m-nav .nav-user-menu .menu-right ul li a {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .m-nav .nav-user-menu .menu-right ul li a img {
     height: 28px;
@@ -123,9 +161,15 @@
     font-size: 0.6rem;
     color: #fff;
     font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: -10px;
     right: -10px;
@@ -142,7 +186,7 @@
   }
   .m-nav .menu-wrap .menu {
     padding: 20px 0;
-    border-bottom: 2px solid rgb(188, 188, 214);
+    border-bottom: 2px solid #bcbcd6;
     font-family: "Noto Sans KR", sans-serif;
   }
   .m-nav .menu-wrap .menu .menu-title {
@@ -164,12 +208,14 @@
     color: #e2e2e2;
   }
 }
+
 /* html <= 375px */
 @media (max-width: 420px) {
   .m-nav {
-    padding: 40px 20px;
+    padding: 10px 20px;
   }
 }
+
 /* html >= 769px */
 @media (min-width: 769px) {
   .hamburger {
