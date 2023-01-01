@@ -52,7 +52,7 @@ $(() => {
   let mario = new Swiper("#mario-swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 20,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -77,7 +77,7 @@ $(() => {
   let marvel = new Swiper("#marvel-swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 20,
     loop: true,
     autoplay: {
       delay: 5000,
