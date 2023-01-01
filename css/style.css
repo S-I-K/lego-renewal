@@ -1853,6 +1853,7 @@ html {
   opacity: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  letter-spacing: -.025em;
 }
 
 #wrap main .newsletter .container .newsletter-txt .title.scrolled {
@@ -1872,6 +1873,7 @@ html {
   opacity: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  letter-spacing: -.025em;
 }
 
 #wrap main .newsletter .container .newsletter-txt .desc.scrolled {

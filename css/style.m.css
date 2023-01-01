@@ -349,8 +349,62 @@
             align-items: center;
     width: 100%;
   }
+  #wrap main .mario-lego-wrap .container h2.title .more {
+    font-size: 0;
+  }
+  #wrap main .mario-lego-wrap .container h2.title .more img {
+    margin-left: 0px;
+  }
+  #wrap main .marvel-lego-wrap .container h2.title .more {
+    font-size: 0;
+  }
   #wrap main .marvel-lego-wrap .container h2.title .more img {
-    margin-left: 10px;
+    margin-left: 0;
+  }
+  #wrap main .lego-story .container .story-box .story-txt .title {
+    text-align: center;
+  }
+  #wrap main .newsletter .container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 60px 20px;
+  }
+  #wrap main .newsletter .container .newsletter-lego {
+    margin-right: 0;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  #wrap main .newsletter .container .newsletter-lego img {
+    width: 260px;
+    height: 260px;
+  }
+  #wrap main .newsletter .container .newsletter-txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #wrap main .newsletter .container .newsletter-txt .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .newsletter .container .newsletter-txt .desc {
+    font-size: 1rem;
+    text-align: left;
+    margin: 20px 0;
   }
 }
 
