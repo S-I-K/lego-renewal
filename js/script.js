@@ -25,7 +25,7 @@ $(() => {
     centeredSlides: true,
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 60,
+    spaceBetween: 40,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

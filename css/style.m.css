@@ -13,7 +13,7 @@
     width: 100%;
   }
   #wrap header .container {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   #wrap header .container .lego-menu {
     display: none;
@@ -336,7 +336,12 @@
   }
   #wrap main .lego-story .container .story-box .story-thumb {
     width: 100%;
+    height: 400px;
     margin-bottom: 40px;
+  }
+  #wrap main .lego-story .container .story-box .story-thumb img {
+    width: auto;
+    height: 100%;
   }
   #wrap main .lego-story .container .story-box .story-txt {
     -webkit-box-align: center;
@@ -344,18 +349,15 @@
             align-items: center;
     width: 100%;
   }
+  #wrap main .marvel-lego-wrap .container h2.title .more img {
+    margin-left: 10px;
+  }
 }
 
 /* html <= 375px */
 @media (max-width: 420px) {
   .m-nav {
     padding: 10px 20px;
-  }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-pagination-progressbar {
-    width: 20%;
-  }
-  #wrap main .marvel-lego-wrap .container .product-wrap .swiper-pagination-progressbar {
-    width: 20%;
   }
 }
 
