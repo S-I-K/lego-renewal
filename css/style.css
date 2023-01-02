@@ -194,6 +194,9 @@ html {
   width: 240px;
   padding: 0 20px;
 }
+#wrap header .m-search {
+  display: none;
+}
 #wrap header.fixed {
   position: fixed;
   background: rgba(225, 255, 255, 0.2);

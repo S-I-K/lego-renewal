@@ -182,6 +182,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
   }
   #wrap .m-search .container {
     border: 1px solid red;
