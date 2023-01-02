@@ -697,7 +697,7 @@
   }
 }
 /* html >= 769px */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -705,6 +705,6 @@
     display: none;
   }
   .m-search {
-    display: none;
+    display: none !important;
   }
 }

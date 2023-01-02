@@ -215,12 +215,17 @@ $(() => {
       .not($(this).children("img"))
       .removeClass("arrow-action");
   });
-  /* mobile search area event */
-  $('.search-icon').click(function(){
-    $('.m-search').show();
+  $(window).resize(function(){
+    if($(window).outerWidth() <= 768) {
+      /* mobile search area event */
+      $('.search-icon').click(function(){
+        $('.m-search').show();
+      });
+      $('.close-btn').click(function(){
+        $('.m-search').hide();
+      });
+    }else {
+      console.log($(window).outerWidth() +"정도라서 나오면 안됨");
+    }
   });
-  $('.close-btn').click(function(){
-    $('.m-search').hide();
-  });
-
 });
