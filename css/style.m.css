@@ -238,7 +238,6 @@
     transition: all .4s;
   }
   #wrap .m-search .container {
-    border: 1px solid #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
