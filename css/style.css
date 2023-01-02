@@ -1332,19 +1332,33 @@ html {
   font-size: 18px;
   font-weight: bold;
   font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+#wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title img {
+  position: absolute;
+  right: 40px;
+  height: 18px;
+  display: none;
+  transition: all 0.4s;
+}
+#wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title img.arrow-action {
+  transform: translateY(-50%) rotate(180deg);
 }
 #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents {
   text-align: center;
+}
+#wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents li {
+  margin-top: 20px;
 }
 #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents li a {
   color: #e5e5e5;
   font-size: 14px;
   font-weight: 300;
   font-family: "Noto Sans KR", sans-serif;
-}
-#wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents li:not(:last-child) {
-  margin-bottom: 20px;
 }
 #wrap footer .container .footer-site-map ul:nth-child(1) {
   margin-right: 40px;
@@ -1422,4 +1436,20 @@ html {
 }
 #wrap footer .container .footer-site-map .sns-area li:not(:last-child) {
   margin-right: 16px;
+}
+#wrap footer .container .m-sns-area {
+  width: 100%;
+  justify-content: center;
+  display: none;
+}
+#wrap footer .container .m-sns-area li {
+  margin: 0 14px;
+}
+#wrap footer .container .m-sns-area li a {
+  display: block;
+  width: 38px;
+  height: 38px;
+}
+#wrap footer .container .m-sns-area li a img {
+  height: 100%;
 }

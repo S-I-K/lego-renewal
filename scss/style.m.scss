@@ -180,23 +180,71 @@
       }
     }
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .img-box {
     width: 240px;
     height: 240px;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .title {
     font-size: 1rem;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .price {
     font-size: 1.4rem;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box {
     flex-direction: column;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt {
     align-items: center;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+  #wrap
+    main
+    .new-logos
+    .container
+    #new-logo-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-icon {
     justify-content: center;
     margin-top: 10px;
   }
@@ -209,33 +257,116 @@
   .thumb-wrap {
     display: none;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box {
     flex-direction: column;
     align-items: center;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-icon {
     margin-top: 10px;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .img-box {
     width: 280px;
     height: 280px;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .title {
     font-size: 1rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .price
+    .normal-price {
     font-size: 1.4rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .price
+    .ori-price {
     font-size: 1.4rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt
+    .price
+    .sale-price {
     font-size: 1.8rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt {
     align-items: center;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-pagination-progressbar {
+  #wrap
+    main
+    .mario-lego-wrap
+    .container
+    .product-wrap
+    #mario-swiper
+    .swiper-pagination-progressbar {
     right: 0;
     margin: 0 auto;
     width: 40%;
@@ -243,18 +374,43 @@
   #wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap {
     display: none;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap
+    main
+    .marvel-lego-wrap
+    .container
+    .product-wrap
+    #marvel-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .img-box {
     width: 280px;
     height: 280px;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box {
+  #wrap
+    main
+    .marvel-lego-wrap
+    .container
+    .product-wrap
+    #marvel-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box {
     flex-direction: column;
     align-items: center;
     .desc-icon {
       margin-top: 10px;
     }
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
+  #wrap
+    main
+    .marvel-lego-wrap
+    .container
+    .product-wrap
+    #marvel-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .desc-box
+    .desc-txt {
     align-items: center;
     .title {
       font-size: 1rem;
@@ -263,7 +419,12 @@
       font-size: 1.4rem;
     }
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap .swiper-pagination-progressbar {
+  #wrap
+    main
+    .marvel-lego-wrap
+    .container
+    .product-wrap
+    .swiper-pagination-progressbar {
     right: 0;
     margin: 0 auto;
     width: 40%;
@@ -334,26 +495,65 @@
   #wrap footer {
     .container {
       flex-direction: column;
-      .footer-left {
-        width: 100%;
+      align-items: center;
+      padding: 40px 20px;
+      .footer-site-map {
         flex-direction: column;
-        align-items: center;
-        .site-map:not(:last-child) {
+        width: 100%;
+        ul:nth-child(1) {
           margin: 0;
+        }
+        ul {
+          .site-map-wrap {
+            padding: 30px 0;
+            border-bottom: 4px solid rgb(188, 188, 214);
+            .site-map-title {
+              margin: 0;
+              font-size: 1.6rem;
+              img {
+                display: block;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            .site-map-contents {
+              display: none;
+              li {
+                margin-top: 30px;
+                a {
+                  // font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-site-map.col {
+        .txt-area {
+          flex-direction: column;
+          align-items: center;
+          ul {
+            width: 100%;
+          }
+        }
+        .sns-area {
+          display: none;
         }
       }
       .footer-center {
-        order: 2;
-      }
-      .footer-right {
-        width: 100%;
-        align-items: center;
-        .site-wrap .site-map:not(:first-child) {
-          margin: 0;
+        order: 3;
+        margin-top: 60px;
+        .info {
+          flex-wrap: wrap;
+          justify-content: center;
         }
-        .site-wrap {
-          flex-direction: column;
-          align-items: center;
+      }
+      .m-sns-area {
+        display: flex;
+        order: 4;
+        margin-top: 60px;
+        li {
+          margin: 0 20px;
         }
       }
     }

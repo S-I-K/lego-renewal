@@ -319,28 +319,60 @@
   }
   #wrap footer .container {
     flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
   }
-  #wrap footer .container .footer-left {
+  #wrap footer .container .footer-site-map {
+    flex-direction: column;
     width: 100%;
+  }
+  #wrap footer .container .footer-site-map ul:nth-child(1) {
+    margin: 0;
+  }
+  #wrap footer .container .footer-site-map ul .site-map-wrap {
+    padding: 30px 0;
+    border-bottom: 4px solid rgb(188, 188, 214);
+  }
+  #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title img {
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents {
+    display: none;
+  }
+  #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents li {
+    margin-top: 30px;
+  }
+  #wrap footer .container .footer-site-map.col .txt-area {
     flex-direction: column;
     align-items: center;
   }
-  #wrap footer .container .footer-left .site-map:not(:last-child) {
-    margin: 0;
+  #wrap footer .container .footer-site-map.col .txt-area ul {
+    width: 100%;
+  }
+  #wrap footer .container .footer-site-map.col .sns-area {
+    display: none;
   }
   #wrap footer .container .footer-center {
-    order: 2;
+    order: 3;
+    margin-top: 60px;
   }
-  #wrap footer .container .footer-right {
-    width: 100%;
-    align-items: center;
+  #wrap footer .container .footer-center .info {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  #wrap footer .container .footer-right .site-wrap .site-map:not(:first-child) {
-    margin: 0;
+  #wrap footer .container .m-sns-area {
+    display: flex;
+    order: 4;
+    margin-top: 60px;
   }
-  #wrap footer .container .footer-right .site-wrap {
-    flex-direction: column;
-    align-items: center;
+  #wrap footer .container .m-sns-area li {
+    margin: 0 20px;
   }
 }
 /* html <= 375px */

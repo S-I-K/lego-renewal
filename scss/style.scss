@@ -1354,20 +1354,33 @@ html {
               font-size: 18px;
               font-weight: bold;
               font-family: "Noto Sans KR", sans-serif;
-              margin-bottom: 30px;
+              // margin-bottom: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              cursor: pointer;
+              img {
+                position: absolute;
+                right: 40px;
+                height: 18px;
+                display: none;
+                transition: all 0.4s;
+              }
+              img.arrow-action {
+                transform: translateY(-50%) rotate(180deg);
+              }
             }
             .site-map-contents {
               text-align: center;
               li {
+                margin-top: 20px;
                 a {
                   color: #e5e5e5;
                   font-size: 14px;
                   font-weight: 300;
                   font-family: "Noto Sans KR", sans-serif;
                 }
-              }
-              li:not(:last-child) {
-                margin-bottom: 20px;
               }
             }
           }
@@ -1459,6 +1472,24 @@ html {
         }
         li:not(:last-child) {
           margin-right: 16px;
+        }
+      }
+      .m-sns-area {
+        width: 100%;
+        // border: 4px solid red;
+        // display: flex;
+        justify-content: center;
+        display: none;
+        li {
+          margin: 0 14px;
+          a {
+            display: block;
+            width: 38px;
+            height: 38px;
+            img {
+              height: 100%;
+            }
+          }
         }
       }
     }
