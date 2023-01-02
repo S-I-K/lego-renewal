@@ -6,6 +6,7 @@
     width: auto;
   }
 }
+
 /* html <= 768px */
 @media (max-width: 768px) {
   #wrap .container {
@@ -23,9 +24,15 @@
   .hamburger {
     height: 20px;
     width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
     z-index: 9999;
     margin-right: 8px;
@@ -36,6 +43,7 @@
     width: 100%;
     height: 2px;
     background: #1a1a1c;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
   .hamburger.close {
@@ -47,10 +55,12 @@
     height: 2px;
   }
   .hamburger.close span:nth-child(1) {
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   .hamburger.close span:nth-child(2) {
-    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
   }
   #wrap header .container .user-menu {
     width: 38px;
@@ -70,25 +80,41 @@
     padding: 10px 60px;
   }
   .m-nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .m-nav .nav-header img {
     width: 60px;
     height: 60px;
   }
   .m-nav .nav-user-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 40px;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgb(188, 188, 214);
+    border-bottom: 2px solid #bcbcd6;
   }
   .m-nav .nav-user-menu .menu-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .m-nav .nav-user-menu .menu-left .user-lego {
     margin-right: 10px;
@@ -96,8 +122,12 @@
   }
   .m-nav .nav-user-menu .menu-left a.user-desc .name {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
@@ -113,13 +143,21 @@
     font-family: "Montserrat", sans-serif;
   }
   .m-nav .nav-user-menu .menu-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .m-nav .nav-user-menu .menu-right ul li a {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .m-nav .nav-user-menu .menu-right ul li a img {
     height: 28px;
@@ -130,9 +168,15 @@
     font-size: 0.6rem;
     color: #fff;
     font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: -10px;
     right: -10px;
@@ -149,7 +193,7 @@
   }
   .m-nav .menu-wrap .menu {
     padding: 20px 0;
-    border-bottom: 2px solid rgb(188, 188, 214);
+    border-bottom: 2px solid #bcbcd6;
     font-family: "Noto Sans KR", sans-serif;
   }
   .m-nav .menu-wrap .menu .menu-title {
@@ -171,6 +215,7 @@
     font-weight: 500;
     color: #e2e2e2;
   }
+  /* m-search */
   #wrap .m-search {
     position: fixed;
     top: 0;
@@ -179,73 +224,323 @@
     width: 100%;
     height: 100vh;
     background: rgba(38, 38, 38, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: none;
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
   #wrap .m-search .container {
-    border: 1px solid red;
+    border: 1px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 100%;
+    height: 100%;
+    padding: 40px 80px 0px;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap .m-search .container .close-btn {
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+  }
+  #wrap .m-search .container .m-search-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -.025em;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap .m-search .container .m-search-area {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin-bottom: 80px;
+  }
+  #wrap .m-search .container .m-search-area input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #bcbcd6;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: transparent;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 6px;
+  }
+  #wrap .m-search .container .m-search-area img {
+    height: 34px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+  #wrap .m-search .container .trending-topics-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #wrap .m-search .container .trending-topics-box ul li {
+    margin-bottom: 10px;
+  }
+  #wrap .m-search .container .trending-topics-box ul li a {
+    display: block;
+    color: #bcbcd6;
+    border: 2px solid #bcbcd6;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  #wrap .m-search .container .trending-topics-box ul li a:hover {
+    background: #bcbcd6;
+    color: #1a1a1c;
+  }
+  #wrap .m-search .container .trending-topics-box ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.img-box {
     width: 240px;
     height: 240px;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.title {
     font-size: 1rem;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.price {
     font-size: 1.4rem;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box {
-    flex-direction: column;
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
-    align-items: center;
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #wrap main .new-logos .container #new-logo-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
-    justify-content: center;
+  #wrap
+main
+.new-logos
+.container
+#new-logo-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 10px;
   }
   #wrap main .sub-banner a .sub-banner-txt {
     top: 10%;
     left: auto;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .thumb-wrap {
     display: none;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box {
-    flex-direction: column;
-    align-items: center;
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-icon {
     margin-top: 10px;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.img-box {
     width: 280px;
     height: 280px;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.title {
     font-size: 1rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .normal-price {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.price
+.normal-price {
     font-size: 1.4rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .ori-price {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.price
+.ori-price {
     font-size: 1.4rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price .sale-price {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt
+.price
+.sale-price {
     font-size: 1.8rem;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
-    align-items: center;
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #wrap main .mario-lego-wrap .container .product-wrap #mario-swiper .swiper-pagination-progressbar {
+  #wrap
+main
+.mario-lego-wrap
+.container
+.product-wrap
+#mario-swiper
+.swiper-pagination-progressbar {
     right: 0;
     margin: 0 auto;
     width: 40%;
@@ -253,34 +548,102 @@
   #wrap main .marvel-lego-wrap .container .product-wrap .thumb-wrap {
     display: none;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .img-box {
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.img-box {
     width: 280px;
     height: 280px;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box {
-    flex-direction: column;
-    align-items: center;
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-icon {
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box .desc-icon {
     margin-top: 10px;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt {
-    align-items: center;
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .title {
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt .title {
     font-size: 1rem;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap #marvel-swiper .swiper-wrapper .swiper-slide .desc-box .desc-txt .price {
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+#marvel-swiper
+.swiper-wrapper
+.swiper-slide
+.desc-box
+.desc-txt .price {
     font-size: 1.4rem;
   }
-  #wrap main .marvel-lego-wrap .container .product-wrap .swiper-pagination-progressbar {
+  #wrap
+main
+.marvel-lego-wrap
+.container
+.product-wrap
+.swiper-pagination-progressbar {
     right: 0;
     margin: 0 auto;
     width: 40%;
   }
   #wrap main .lego-story .container .story-box {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #wrap main .lego-story .container .story-box .story-thumb {
     width: 100%;
@@ -292,7 +655,9 @@
     height: 100%;
   }
   #wrap main .lego-story .container .story-box .story-txt {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
   #wrap main .mario-lego-wrap .container h2.title .more {
@@ -312,16 +677,27 @@
   }
   #wrap main .newsletter .container {
     height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 60px 20px;
   }
   #wrap main .newsletter .container .newsletter-lego {
     margin-right: 0;
     position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
   }
   #wrap main .newsletter .container .newsletter-lego img {
@@ -329,7 +705,9 @@
     height: 260px;
   }
   #wrap main .newsletter .container .newsletter-txt {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #wrap main .newsletter .container .newsletter-txt .title {
     font-size: 1.4rem;
@@ -340,12 +718,20 @@
     margin: 20px 0;
   }
   #wrap footer .container {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 40px 20px;
   }
   #wrap footer .container .footer-site-map {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   #wrap footer .container .footer-site-map ul:nth-child(1) {
@@ -353,7 +739,7 @@
   }
   #wrap footer .container .footer-site-map ul .site-map-wrap {
     padding: 30px 0;
-    border-bottom: 4px solid rgb(188, 188, 214);
+    border-bottom: 4px solid #bcbcd6;
   }
   #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title {
     margin: 0;
@@ -362,7 +748,8 @@
   #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-title img {
     display: block;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   #wrap footer .container .footer-site-map ul .site-map-wrap .site-map-contents {
     display: none;
@@ -371,8 +758,13 @@
     margin-top: 30px;
   }
   #wrap footer .container .footer-site-map.col .txt-area {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #wrap footer .container .footer-site-map.col .txt-area ul {
     width: 100%;
@@ -381,34 +773,63 @@
     display: none;
   }
   #wrap footer .container .footer-center {
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     margin-top: 60px;
   }
   #wrap footer .container .footer-center .info {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #wrap footer .container .m-sns-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    order: 4;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
     margin-top: 60px;
   }
   #wrap footer .container .m-sns-area li {
     margin: 0 20px;
   }
 }
+
 /* html <= 375px */
 @media (max-width: 420px) {
   .m-nav {
     padding: 10px 20px;
   }
+  #wrap .m-search .container {
+    padding: 40px 40px;
+  }
+  #wrap .m-search .container .m-search-title {
+    font-size: 1.8rem;
+  }
+  #wrap .m-search .container .m-search-area input {
+    font-size: 1.4rem;
+  }
+  #wrap .m-search .container .m-search-area img {
+    height: 24px;
+  }
+  #wrap .m-search .container .trending-topics-box ul li a {
+    font-size: 1rem;
+  }
 }
+
 /* html >= 769px */
 @media (min-width: 769px) {
   .hamburger {
     display: none;
   }
   .m-nav {
+    display: none;
+  }
+  .m-search {
     display: none;
   }
 }

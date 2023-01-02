@@ -215,4 +215,12 @@ $(() => {
       .not($(this).children("img"))
       .removeClass("arrow-action");
   });
+  /* mobile search area event */
+  $('.search-icon').click(function(){
+    $('.m-search').show();
+  });
+  $('.close-btn').click(function(){
+    $('.m-search').hide();
+  });
+
 });
