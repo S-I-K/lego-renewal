@@ -21,6 +21,13 @@
   #wrap header .container .lego-menu {
     display: none;
   }
+  #wrap header .container .user-menu {
+    .search-icon:hover {
+      input {
+        display: none;
+      }
+    }
+  }
   .hamburger {
     height: 20px;
     width: 30px;
@@ -178,6 +185,24 @@
           }
         }
       }
+    }
+  }
+  #wrap .m-search {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(38, 38, 38, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   #wrap

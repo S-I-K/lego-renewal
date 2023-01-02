@@ -1,4 +1,7 @@
 $(() => {
+  $("a").click(function (e) {
+    e.preventDefault();
+  });
   /* swiper.js */
   /* theme category */
   var theme = new Swiper("#theme-category-swiper", {
