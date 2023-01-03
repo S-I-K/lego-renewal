@@ -202,9 +202,6 @@ html {
 #wrap header.fixed .header-logo {
   opacity: 0;
 }
-#wrap header.fixed .user-menu .search-icon {
-  background: #fff;
-}
 #wrap main {
   /* 공용 title */
   /* main video */

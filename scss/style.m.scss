@@ -211,11 +211,15 @@
       height: 100%;
       padding: 40px 80px 0px;
       .close-btn {
-        background: #fff;
+        // background: #fff;
         position: absolute;
         top: 30px;
         right: 20px;
         cursor: pointer;
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
       .m-search-title {
         font-size: 2.4rem;
